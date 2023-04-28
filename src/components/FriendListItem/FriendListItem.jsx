@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
+import { ListItem, Status } from './FriendList.styled';
 
 export default function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <li className="item">
-      <span className="status">{isOnline}</span>
+    <ListItem>
+      <Status status={isOnline}></Status>
       <img className="avatar" src={avatar} alt="User avatar" width="48" />
       <p className="name">{name}</p>
-    </li>
+    </ListItem>
   );
 };
 
@@ -14,4 +15,4 @@ FriendListItem.propTypes = {
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     isOnline: PropTypes.bool.isRequired,
-};
+}; 
