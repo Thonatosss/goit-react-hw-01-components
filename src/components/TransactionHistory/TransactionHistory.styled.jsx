@@ -4,6 +4,7 @@ const Table = styled.table`
   width: 500px;
   border-collapse: collapse;
   margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `;
 const TableHead = styled.thead`
   border: 1px solid #ccc;
